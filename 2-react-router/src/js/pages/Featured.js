@@ -17,7 +17,7 @@ export default class Featured extends React.Component {
       "Some Other Article",
       "Yet Another Article",
       "Still More",
-    ].map((title, i) => <Article key={i} title={title}/> );
+    ].map((title, i) => <Article key={i} title={title} />);
 
     const adText = [
       "Ad spot #1",
@@ -27,15 +27,13 @@ export default class Featured extends React.Component {
       "Ad spot #5",
     ];
 
-    const randomAd = adText[Math.round( Math.random() * (adText.length-1) )];
+    const randomAd = adText[Math.round(Math.random() * (adText.length - 1))];
     console.log("featured");
     return (
       <div>
         <div class="row">
           <div class="col-lg-12">
-            <div class="well text-center">
-              {randomAd}
-            </div>
+            <div class="well text-center">{randomAd}</div>
           </div>
         </div>
 
